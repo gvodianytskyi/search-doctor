@@ -1,0 +1,17 @@
+<div ng-class="{deactivated: !$ctrl.checked}">
+    <div class="filter-header">
+        <span class="filter-name">СВОБОДНАЯ ДАТА ПРИЁМА:</span>
+        <span gv-toggle="DateFilter"></span>
+    </div>
+    <div class="filter-body">
+        <div class="dropdown dropdown_select-date-time"
+             moment-picker="$ctrl.date"
+             ng-model="$ctrl.momentDate"
+             format="DD/MM/YYYY"
+             min-view="month"
+             min-date="$ctrl.today"
+             today="true">
+            <span>{{ $ctrl.date | date:'dd/MM/yyyy' }}</span>
+        </div>
+    </div>
+</div>

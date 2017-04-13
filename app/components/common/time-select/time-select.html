@@ -1,0 +1,16 @@
+<div class="dropdown"
+     ng-class="{active: $ctrl.active}">
+    <ng-transclude></ng-transclude>
+    <span class="dropdown__selected">{{$ctrl.time}}</span>
+    <div class="dropdown__popup">
+        <div class="dropdown__popup-header">{{$ctrl.date}}</div>
+        <ul class="dropdown__popup-list">
+            <li class="dropdown__popup-time-item"
+                ng-repeat="option in $ctrl.getOptions()"
+                ng-click="$ctrl.getSelected() !== option && $ctrl.setSelected(option)"
+                ng-class="{active : $ctrl.getSelected() === option}">
+                {{option + ':00'}}
+            </li>
+        </ul>
+    </div>
+</div>

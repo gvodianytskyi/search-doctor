@@ -1,0 +1,23 @@
+<div class="panel panel__basic-search">
+    <div class="panel__basic-search-top clearfix">
+        <div class="dropdown_select-search panel__basic-search-dropdown" gv-dropdown="SelectSearch"></div>
+        <div class="dropdown_select-specialty panel__basic-search-dropdown" greyed="true" gv-dropdown="SelectSpecialty">
+            <img class="dropdown__icon" src="icons/speciality.png">
+        </div>
+        <div class="dropdown_select-district panel__basic-search-dropdown" greyed="true" gv-dropdown="SelectDistrict">
+            <img class="dropdown__icon" src="icons/location_yellow.png">
+        </div>
+        <button class="button button_yellow">Поиск</button>
+    </div>
+    <div class="panel__basic-search-bottom clearfix">
+        <div class="panel__location left">
+            <span class="panel__location-text">Ваш город:</span>
+            <a class="link link_dashed-underline link_regular" href="#">Киев</a>
+        </div>
+        <a class="link link_dashed-underline link_light right"
+           ng-click="$ctrl.showExtendedSearch()"
+           href="#">
+            Расширенный поиск
+        </a>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.deactivated .star-rating__star-img_active {
+    content:url('./../icons/star-inactive-grey.png');
+}
+
+.deactivated .star-rating__star-img_active.filled {
+    position: relative;
+    top: -1px;
+    content:url('./../icons/star-inactive-chosen.png');
+}
+
+.star-rating__star-img_active {
+    content:url('./../icons/star-active-grey.png');
+}
+
+.star-rating__star-img_active.filled {
+    position: relative;
+    top: -1px;
+    content:url('./../icons/star-active-chosen.png');
+}
+
+.star-rating {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.star-rating__star {
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.star-rating__star_margin {
+    margin-right: 7px;
+}
+

@@ -1,0 +1,15 @@
+<div ng-class="{deactivated: !$ctrl.checked}">
+    <div class="filter-header">
+        <span class="filter-name">СТОИМОСТЬ КОНСУЛЬТАЦИИ:</span>
+        <span gv-toggle="PriceFilter"></span>
+    </div>
+    <div class="filter-body">
+        <rzslider
+                class="custom-slider"
+                rz-slider-model="$ctrl.slider.min"
+                rz-slider-high="$ctrl.slider.max"
+                rz-slider-options="$ctrl.slider.options"
+                rz-slider-tpl-url="components/common/range-slider/range-slider.html">
+        </rzslider>
+    </div>
+</div>

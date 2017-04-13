@@ -1,0 +1,8 @@
+<ul class="star-rating">
+    <li class="star-rating__star star-rating__star_margin"
+        ng-repeat="star in $ctrl.stars"
+        ng-click="$ctrl.toggle($index)">
+        <img class="star-rating__star-img star-rating__star-img_active"
+            ng-class="star">
+    </li>
+</ul>

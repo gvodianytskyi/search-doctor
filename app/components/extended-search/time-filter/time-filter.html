@@ -1,0 +1,14 @@
+<div ng-class="{deactivated: !$ctrl.checked}">
+    <div class="filter-header">
+        <span class="filter-name">СВОБОДНОЕ ВРЕМЯ ПРИЁМА: </span>
+        <span gv-toggle="TimeFilter"></span>
+    </div>
+    <div class="filter-body">
+        <div class="dropdown_select-date-time" time-select="TimeFrom" ng-model="$ctrl.timeFrom">
+            <span class="time-prefix">c </span>
+        </div>
+        <div class="dropdown_select-date-time" time-select="TimeTo" ng-model="$ctrl.timeTo">
+            <span class="time-prefix">до </span>
+        </div>
+    </div>
+</div>

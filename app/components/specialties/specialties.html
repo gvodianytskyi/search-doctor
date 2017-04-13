@@ -1,0 +1,35 @@
+<div>
+    <section class="section section_specialties">
+        <div class="section__header">
+            <img class="section__header-icon section__header-icon_specialties" src="icons/specialties_icon.png">
+            <h1 class="section__header-text">Специальности</h1>
+        </div>
+        <div class="section__body">
+            <ul class="link-list link-list_spec">
+                <li class="link-list__item" ng-repeat="(key, value) in $ctrl.specialties" ng-if="$index < 14">
+                    <a class="link link_regular semibold-text">{{key}}</a>
+                    <label class="count-label grey-text semibold-text">{{value.length}}</label>
+                </li>
+                <li class="link-list__item" ng-if="$ctrl.specialtiesAmount >= 14">
+                    <a class="link link_regular bold-text">Показать все ></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section section_directions">
+        <div class="section__header">
+            <img class="section__header-icon section__header-icon_specialties" src="icons/clinic_icon.png">
+            <h1 class="section__header-text">Направления</h1>
+        </div>
+        <div class="section__body">
+            <ul class="link-list link-list_spec">
+                <li class="link-list__item" ng-repeat="(key, value) in $ctrl.directions" ng-if="$index < 14">
+                    <a class="link link_regular semibold-text">{{key}}</a>
+                </li>
+                <li class="link-list__item" ng-if="$ctrl.directionsAmount >= 14">
+                    <a class="link link_regular bold-text">Показать все ></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>

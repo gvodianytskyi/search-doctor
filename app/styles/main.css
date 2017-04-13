@@ -1,0 +1,442 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #f0f4f7;
+}
+
+.main {
+    max-width: 1040px;
+    margin: auto;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.cecutient {
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.cecutient__icon {
+    margin-right: 3px;
+}
+
+.link_dashed-underline {
+    font-family: proximaNovaSemibold;
+    border-bottom: 1px dashed;
+}
+
+.link_regular,
+.link_regular:hover,
+.link_regular:active,
+.link_regular:link,
+.link_regular:visited {
+    color: #58addf;
+}
+
+.link_light:hover,
+.link_light:active,
+.link_light:link,
+.link_light:visited {
+    color: #a5cfec;
+}
+
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.link-list_spec {
+    margin: 10px 0 15px 0;
+}
+
+.link-list__item {
+    display: block;
+    margin-top: 2px;
+}
+
+.count-label {
+    font-size: 11pt;
+    margin:0;
+    font-family: proximaNovaSemibold;
+}
+
+.grey-text {
+    color: #9a9a9a;
+}
+
+.regular-text {
+    font-family: proximaNovaRegular;
+}
+
+.semibold-text {
+    font-family: proximaNovaSemibold;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.panel {
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: -2px 3px 6px -2px rgba(179,179,179,1);
+    -moz-box-shadow: -2px 3px 6px -2px rgba(179,179,179,1);
+    box-shadow: -2px 3px 6px -2px rgba(179,179,179,1);
+}
+
+.panel__basic-search {
+    position: relative;
+    height: 123px;
+    padding: 26px 30px;
+}
+
+.panel__basic-search-dropdown {
+    margin: 2px 20px 0 0;
+    display: inline-block;
+}
+
+.panel_extended-search {
+    height: 324px;
+    padding: 30px 30px 19px 31px;
+}
+
+.panel_specialties {
+    height: 371px;
+    padding: 30px 30px 31px 30px;
+}
+
+.section__header-text {
+    display: inline-block;
+    margin: 0;
+    font-size: 15pt;
+    font-family: proximaNovaSemibold;
+}
+
+.section__header-icon {
+
+}
+
+.section__header-icon_specialties {
+    position: relative;
+    top: -2px;
+    margin: 0 5px 0 0;
+}
+
+.section__header_extended-search {
+    position: relative;
+}
+
+.section__header_extended-search .link {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.link:link,
+.link:hover,
+.link:active,
+.link:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    background-color: #33a1db;
+    height: 70px;
+    font-family: proximaNovaSemibold;
+    font-size: 12pt;
+}
+
+.header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navigation {
+    font-size: 0;
+}
+
+.header__nav {
+    margin: 25px 0 25px 30px;
+    float: left;
+}
+
+.navigation__nav-list {
+    padding: 0;
+    display: inline-block;
+}
+
+.navigation__nav-list-item  {
+    display: inline-block;
+    margin-right: 41px;
+}
+
+.header .link {
+    color: white;
+    font-size: 12pt;
+}
+
+.navigation .logo {
+    margin-right: 45px;
+}
+
+.logo__link_light {
+    font-family: proximaNovaLight;
+    font-style: normal;
+}
+
+.header__controls {
+    float: right;
+    margin: 18px 20px 14px 0;
+    font-size: 0;
+}
+
+.header__controls .link {
+    margin-left: 30px;
+}
+
+.header__controls .button {
+    margin-left: 21px;
+    width: 140px;
+}
+
+.button {
+    height: 38px;
+    font-family: proximaNovaSemibold;
+    font-size: 12pt;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button_yellow {
+    background-color: #fedb6c;
+}
+
+.yellow-btn {
+    height: 38px;
+    background-color: #fedb6c;
+    font-family: proximaNovaSemibold;
+    font-size: 12pt;
+    width: 140px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.panel__basic-search-top {
+    font-size: 0;
+}
+
+.panel__basic-search-bottom {
+    margin-top: 20px;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.panel__basic-search-top .button {
+    width: 112px;
+    float: right;
+}
+
+.footer {
+    margin-top: 48px;
+    position: relative;
+    bottom: 0;
+    background-color: white;
+    height: 51px;
+    font-family: proximaNovaSemibold;
+    font-size: 0;
+}
+
+.aside {
+    font-size: 11pt;
+}
+
+.aside_left {
+    float: left;
+    margin: 17px 0 0 30px;
+}
+
+.aside__link-list {
+    padding: 0;
+    display: inline-block;
+}
+
+.aside__link-list-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.aside__link-list-item .link:link,
+.aside__link-list-item .link:visited,
+.aside__link-list-item .link:hover,
+.aside__link-list-item .link:active,
+.aside_left .logo .link {
+    color: #5bafe0;
+}
+
+.aside_left .logo {
+    margin-right: 29px;
+}
+
+.aside_right {
+    margin: 17px 30px 0 0;
+    float: right;
+}
+
+.aside__working-time {
+    color: #9a9a9a;
+    margin-right: 20px;
+}
+
+.social-links {
+    display: inline-block;
+}
+
+.social-links__icon {
+    margin-right: 20px;
+}
+
+.panel__location {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.panel__location-text {
+    font-family: proximaNovaRegular;
+    margin-right: 6px;
+}
+
+.filter {
+    margin: 20px 0 0 0;
+    width: calc(100% * (1/3));
+}
+
+.filter .deactivated .filter-body {
+    pointer-events: none;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter-name {
+    position: relative;
+    bottom: 4px;
+    margin-right: 9px;
+    font-family: proximaNovaSemibold;
+    color: #9a9a9a;
+    display: inline-block;
+    font-size: 9pt;
+}
+
+.filter .deactivated .filter-name,
+.filter .deactivated .filter-body .comment {
+    color: #d4d4d4;
+}
+
+.district-filter .filter-body .link-icon {
+    margin: 0 3px 0 0;
+}
+
+.district-filter .deactivated .filter-body .icon-active {
+    display: none;
+}
+
+.district-filter .filter-body .icon-deactivated{
+    display: none;
+}
+
+.district-filter .deactivated .filter-body .icon-deactivated{
+    display: inline-block;
+}
+
+.district-filter .filter-body .star {
+    color: #58addf;
+}
+
+.district-filter .deactivated .filter-body .star {
+    color: #b2dffc;
+}
+
+.deactivated .link_dashed-underline {
+    color: #b2dffc;
+    cursor: default;
+}
+
+.district-filter .filter-body .comment {
+    width: 280px;
+    margin: 18px 0 18px 0;
+    color: #9a9a9a;
+    font-size: 9pt;
+    font-family: proximaNovaRegular;
+}
+
+.dropdown_select-date-time {
+    width: 134px;
+    display: inline-block;
+}
+
+.greyed {
+    color: #c3c3c3;
+}
+
+.dropdown_select-search {
+    width: 180px;
+}
+
+.dropdown_select-specialty {
+    width: 304px;
+}
+
+.dropdown_select-district {
+    width: 314px;
+}
+
+.dropdown_time {
+    margin-right: 8px;
+}
+
+@font-face {
+    font-family: proximaNovaLight;
+    src: url(../fonts/Proxima_Nova_Light.otf);
+}
+
+@font-face {
+    font-family: proximaNovaSemibold;
+    src: url(../fonts/Proxima_Nova_Semibold.otf);
+}
+
+@font-face {
+    font-family: proximaNovaRegular;
+    src: url(../fonts/Proxima_Nova_Regular.otf);
+}
+

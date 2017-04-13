@@ -1,0 +1,22 @@
+{
+  "name": "search-doctor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "prestart": "npm install",
+    "postinstall": "bower install"
+  },
+  "author": "Gennadii Vodianytskyi",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "angular-moment-picker": "^0.9.5",
+    "angular-sanitize": "^1.5.7"
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="vendor/angular-moment-picker/dist/angular-moment-picker.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/toggle.css">
+    <link rel="stylesheet" href="styles/star-rating.css">
+    <link rel="stylesheet" href="styles/range-slider.css">
+    <!--<link rel="stylesheet" href="../node_modules/angularjs-slider/dist/rzslider.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/6.0.0/rzslider.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body ng-cloak>
+
+<sd-header></sd-header>
+
+<main class="main">
+    <div class="cecutient">
+        <img class="cecutient__icon" src="icons/eye.png">
+        <a class="link link_dashed-underline link_regular" href="#">Версия для слабовидящих</a>
+    </div>
+
+    <basic-search></basic-search>
+
+    <extended-search></extended-search>
+
+    <div class="panel panel_specialties">
+        <specialties></specialties>
+
+    </div>
+
+</main>
+
+<sd-footer></sd-footer>
+
+
+<script src="vendor/angular/angular.min.js"></script>
+<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="vendor/moment/min/moment-with-locales.js"></script>
+<script src="vendor/angular-moment-picker/dist/angular-moment-picker.min.js"></script>
+<!--<script src="../node_modules/angular-sanitize/angular-sanitize.js"></script>-->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>
+<!--<script src="../node_modules/angularjs-slider/dist/rzslider.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/6.0.0/rzslider.min.js"></script>
+<!--<script src="vendor/angularjs-datepicker/src/js/angular-datepicker.js"></script>-->
+<script src="index.js"></script>
+<script src="services/services.module.js"></script>
+<script src="components/components.module.js"></script>
+<script src="components/common/common-components.module.js"></script>
+<script src="components/basic-search/basic-search.module.js"></script>
+<script src="components/extended-search/extended-search.module.js"></script>
+<script src="components/extended-search/time-filter/time-filter.module.js"></script>
+<script src="components/common/star-rating/star-rating.directive.js"></script>
+<script src="components/common/star-rating/star-rating.controller.js"></script>
+<script src="components/common/time-select/time-select.directive.js"></script>
+<script src="services/options.service.js"></script>
+<script src="services/date-time.service.js"></script>
+<script src="services/state-router.service.js"></script>
+<script src="services/specialties.service.js"></script>
+<script src="components/common/toggle/toggle.directive.js"></script>
+<script src="components/header/header.component.js"></script>
+<script src="components/header/header.controller.js"></script>
+<script src="components/footer/footer.component.js"></script>
+<script src="components/footer/footer.controller.js"></script>
+<script src="components/basic-search/basic-search.component.js"></script>
+<script src="components/basic-search/basic-search.controller.js"></script>
+<script src="components/extended-search/extended-search.component.js"></script>
+<script src="components/extended-search/extended-search.controller.js"></script>
+<script src="components/extended-search/experience-filter/experience-filter.component.js"></script>
+<script src="components/extended-search/experience-filter/experience-filter.controller.js"></script>
+<script src="components/extended-search/price-filter/price-filter.component.js"></script>
+<script src="components/extended-search/price-filter/price-filter.controller.js"></script>
+<script src="components/extended-search/district-filter/district-filter.component.js"></script>
+<script src="components/extended-search/district-filter/district-filter.controller.js"></script>
+<script src="components/extended-search/date-filter/date-filter.component.js"></script>
+<script src="components/extended-search/date-filter/date-filter.controller.js"></script>
+<script src="components/extended-search/time-filter/time-from/time-from.controller.js"></script>
+<script src="components/extended-search/time-filter/time-to/time-to.controller.js"></script>
+<script src="components/extended-search/time-filter/time-filter.directive.js"></script>
+<script src="components/extended-search/time-filter/time-filter.controller.js"></script>
+<script src="components/extended-search/rating-filter/rating-filter.component.js"></script>
+<script src="components/extended-search/rating-filter/rating-filter.controller.js"></script>
+<script src="components/common/dropdown/dropdown.directive.js"></script>
+<script src="components/basic-search/select-search-dropdown/select-search.controller.js"></script>
+<script src="components/basic-search/select-specialty-dropdown/select-specialty.controller.js"></script>
+<script src="components/basic-search/select-district-dropdown/select-district.controller.js"></script>
+<script src="components/specialties/specialties.component.js"></script>
+<script src="components/specialties/specialties.controller.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+</body>
+</html>

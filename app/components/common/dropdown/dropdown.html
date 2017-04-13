@@ -1,0 +1,14 @@
+<div class="dropdown"
+     ng-class="{active: $ctrl.active,
+                greyed: $ctrl.getGreyed()}">
+    <ng-transclude></ng-transclude>
+    <span class="dropdown__selected">{{$ctrl.getSelected()}}</span>
+    <ul class="dropdown__popup">
+        <li class="dropdown__popup-item"
+            ng-repeat="option in $ctrl.getOptions()"
+            ng-click="$ctrl.getSelected() !== option && $ctrl.setSelected(option)"
+            ng-class="{active : $ctrl.getSelected() === option}">
+                {{option}}
+        </li>
+    </ul>
+</div>

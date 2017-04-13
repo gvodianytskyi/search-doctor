@@ -1,0 +1,23 @@
+{
+  "name": "search-doctor",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Gennadii Vodianytskyi"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angularjs-datepicker": "^2.1.12",
+    "angular-moment-picker": "moment-picker#^0.9.5"
+  }
+}

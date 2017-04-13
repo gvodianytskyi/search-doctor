@@ -1,0 +1,131 @@
+.custom-slider.rzslider{
+    width: 222px;
+    margin: 0 0 0 0;
+}
+
+.deactivated .custom-slider.rzslider {
+    /*pointer-events: none;*/
+}
+
+.custom-slider.rzslider .rz-bar {
+    background: #e2e2e2;
+    height: 6px;
+}
+
+.deactivated .custom-slider.rzslider .rz-bar {
+    background: #f5f5f5;
+}
+
+.custom-slider.rzslider .rz-selection {
+    background: #fedb6c;
+}
+
+.deactivated .custom-slider.rzslider .rz-selection {
+    background: #f8ecc5;
+}
+
+.custom-slider.rzslider .rz-limit {
+    display: none;
+}
+
+.custom-slider.rzslider .rz-pointer {
+    width: 18px;
+    height: 18px;
+    top: -5px;
+    bottom: 0;
+    background-color: #33a1db;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+.deactivated .custom-slider.rzslider .rz-pointer,
+.deactivated .custom-slider.rzslider .rz-pointer.rz-active {
+    background-color: #b8def2;
+}
+
+.custom-slider.rzslider .rz-pointer:after {
+    display: none;
+}
+
+.custom-slider.rzslider .rz-pointer.rz-active {
+    z-index: 4;
+    background-color: #33a1db;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.custom-slider.rzslider .rz-pointer.rz-active:focus {
+    outline: none;
+}
+
+.custom-slider.rzslider .rz-bubble {
+    position: relative;
+    top: 25px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.custom-slider.rzslider .rz-pointer .triangle {
+    position: relative;
+    top: 9px;
+    left: 3px;
+}
+
+.deactivated .custom-slider.rzslider .rz-pointer .triangle {
+    display: none;
+}
+
+.custom-slider.rzslider .rz-pointer .triangle-deactivated {
+    display: none;
+}
+
+.deactivated .custom-slider.rzslider .rz-pointer .triangle-deactivated {
+    position: relative;
+    top: 9px;
+    left: 3px;
+    display: inline-block;
+}
+
+
+.custom-slider.rzslider .rz-pointer .rectangle {
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(138,128,143,0.38);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(138,128,143,0.38);
+    box-shadow: 0px 1px 3px 0px rgba(138,128,143,0.38);
+    border-radius: 12%;
+}
+
+.deactivated .custom-slider.rzslider .rz-pointer .rectangle {
+    display: none;
+}
+
+.rectangle-deactivated {
+    display: none;
+}
+
+.deactivated .rectangle-deactivated {
+    display: inline-block;
+}
+
+.custom-slider.rzslider .rz-pointer .range-tooltip .tooltip-text {
+    z-index: 200;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 6px;
+    font-size: 9pt;
+    font-family: proximaNovaSemibold;
+}
+
+.deactivated .custom-slider.rzslider .rz-pointer .range-tooltip .tooltip-text {
+    color: #c2b89a;
+}
+
+.range-tooltip {
+    width: 50px;
+    position: relative;
+    top: 23px;
+    right: -17px;
+}
